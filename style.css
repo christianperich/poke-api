@@ -17,7 +17,6 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: auto;
-    
 }
 
 .pokemon {
@@ -29,6 +28,7 @@ body {
     background-color: azure;
     z-index: -2;
     border-radius: 10px;
+    
 }
 
 .container .pokemon img {

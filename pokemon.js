@@ -10,7 +10,6 @@ function getPokemon() {
     fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
     .then(response => response.json())
     .then(data => {
-        
         nombre.innerText = data.name.charAt(0).toUpperCase() + data.name.slice(1);
         imagen.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`; 
         perfil.innerText = "Type: " + data.types[0].type.name.charAt(0).toUpperCase() + data.types[0].type.name.slice(1)
